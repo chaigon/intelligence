@@ -157,6 +157,7 @@ THREAT_BOOK_DOMAIN_URL = "https://x.threatbook.cn/api/v1/domain/query"
 THREAT_BOOK_IP_URL = "https://x.threatbook.cn/api/v1/ip/query"
 
 try:
-   from local_setttings import *
+   from local_settings import *
 except ImportError, e:
-    raise 
+    print ("import local_settings failed")
+    from tests.test_local_settings import *
