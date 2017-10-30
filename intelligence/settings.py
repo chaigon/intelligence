@@ -106,7 +106,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'intelligence',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': 3306
     }
@@ -155,3 +155,8 @@ STATIC_URL = '/static/'
 API_KEY = "9b3b63d3d9f841928c17a7981453c0cec8592d420fd64a808a81acb09a8ecc66"
 THREAT_BOOK_DOMAIN_URL = "https://x.threatbook.cn/api/v1/domain/query"
 THREAT_BOOK_IP_URL = "https://x.threatbook.cn/api/v1/ip/query"
+
+try:
+   from local_setttings import *
+except ImportError, e:
+    raise 
