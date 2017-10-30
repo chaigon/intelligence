@@ -8,6 +8,7 @@
           <button onclick="window.location.href='{% url 'course:down_work_table' %}'">Download</button>
         </div>
       </div>
+      
 
       <div id="home-leak-pie" style="width:100%;height:850px;display:inline-block;margin-top:30px;"></div>
 

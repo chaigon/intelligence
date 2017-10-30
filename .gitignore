@@ -3,4 +3,4 @@
 *.swp
 *.bak
 *.pyo
-intelligence_venv/
+intelligence_venv/*
