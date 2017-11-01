@@ -28,14 +28,8 @@ jobs:
       - run:
           command: |
             sudo pip install -r requirements.txt
-      - run:
-          command: |
             sudo mkdir -p /var/log/interlligence/
-      - run:
-          command: |
             sudo chmod +777 /var/log/interlligence/
-      - run:
-          command: |
             python manage.py test tests
       - store_artifacts:
           path: test-reports/
