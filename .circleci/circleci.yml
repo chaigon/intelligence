@@ -10,7 +10,7 @@ jobs:
           MYSQL_USER: root
           MYSQL_HOST: ubuntu
           MYSQL_ROOT_HOST: "%"
-          MYSQL_ROOT_PASSWORD: ubuntu
+          MYSQL_ROOT_PASSWORD: 'ubuntu'
     steps:
       - checkout
 
